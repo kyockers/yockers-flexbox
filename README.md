@@ -1,2 +1,9 @@
 # yockers-flexbox
-A single-page Flexbox layout showcase that demonstrates three common patterns — nav bar, centered hero, and responsive card row — using HTML and an external CSS stylesheet
+
+A single-page Flexbox layout showcasing: 
+  Section 1. Navigation Bar with Brandmark
+  Section 2. Centered Hero
+  Section 3. Responsive Card Row
+
+Developed by Kimberley Yopckers using HTML and external CSS stylesheet.
+Code in Section 3: Responsive Card Row Code is based on the Mobile Stack preset from Visual Playground's Flexbox lab, and edited by me. 
