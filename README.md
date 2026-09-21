@@ -1,6 +1,6 @@
 # yockers-flexbox
 
-A single-page Flexbox layout showcasing three sections. Section 1: Navigation Bar with Brandmark. Section 2: Centered Hero. Section 3: Responsive Card Row.
+A single-page Flexbox layout showcasing three common layouts. Section 1: Navigation Bar with Brandmark. Section 2: Centered Hero. Section 3: Responsive Card Row.
 
 Developed by Kimberley Yockers using HTML and external CSS stylesheet.
 
