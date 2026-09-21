@@ -1,0 +1,88 @@
+
+<!-- NOTE: I didn't fill in content (i.e. logo, hero image, text) since this assignment seems to be more about flex-box use. 
+I can add it if needed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- verify and set device width -->
+
+  <title>Flexbox Layout Showcase</title> 
+
+  <link rel="stylesheet" href="css/style.css">  <!-- link to stylesheet -->
+</head>
+
+<body>
+  <h1>Flexbox Layout Showcase</h1>  <!-- <h1> applies h1 CSS style to the section header text -->
+
+  
+<!-- Section 1: Nav Bar -->
+<!-- This section holds the logo text or image and the site navigation. Logo is on the left, navigation is on the right. 
+There are three navigation links: Home, About, Contact. Each element ressponds to window size. 
+<h2> applies h2 style to the section header text
+<nav class="navbar"> assigns navigation bar class selector
+<div class="logo"> assigns logo class selector
+<ul> creates a list to hold navigation links
+<li> creates each individual link (<a href="#">) -->
+  <section>
+    <h2>1. Nav Bar</h2>
+    <nav class="navbar">                    
+      <div class="logo">BrandName</div>
+      <ul class="navlinks"> 
+        <li><a href="#">Home</a></li> 
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+  
+  
+<!-- Section 2: Centered Hero -->
+<!-- This section holds the hero text or image. Content is centered on x- and y-axis. Box and text styling is appled.
+Responds to window size. 
+<h2> applies h2 style to the section header text 
+<nav class="navbar"> applies class selector .navbar to navigation box
+<div class="logo"> applies class selector .logo to logo 
+<ul> creates a list to hold navigation links
+<li> creates each individual link (<a href="#">) -->
+  <section>
+    <h2>2. Centered Hero</h2>
+    <div class="hero">
+      <p class="hero-text">Perfectly centered</p> 
+    </div>
+  </section>
+  
+  
+<!-- Section 3: Responsive Card Row -->
+<!-- This section holds the cards. Cards are added and formatting applied. Box and text styling is applied.
+Responds to window size. 
+<h2> applies h2 style to the section header text 
+<div class="card-row"> creates a container to hold the cards, applies .card-rox class selector to container
+<div class="card"> creates a card, applies .card class selector to the card -->
+  <section>
+    <h2>3. Responsive Card Row</h2>
+    <div class="card-row">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+    </div>
+  </section>
+<p><br>_____________</p>
+  <p><strong>Reflection:</strong> 
+    Section 3 was the hardest for me. It's getting easier, but I still run across things I don't quite know how to do, 
+    so there's a lot of trial and error at this point. I had to look up the CSS for that on the Visual Playground 
+    because I'm still pretty new to responsive design</p>
+  </p><strong>Section 1.</strong> The Google homepage has horizontal top bar navigation underneath it's search bar, and has a the logo to the left.<br>
+  <strong>Section 2.</strong> A Hero image is used on the etsy homepage to highlight whatever cool stuff they want to sell at the moment.<br>
+  <strong>Section 3.</strong> Google photos uses a responsive card-style display. The images are in a line, but the size and placement changes depending on window size.</p>
+
+
+<!-- This is the footer section. 
+Copyright information is here. -->
+  <footer>&copy; 2026 Kimberley Yockers</footer>
+
+</body>
+</html>

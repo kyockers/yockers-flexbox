@@ -1,0 +1,151 @@
+/* Base */
+
+/* 
+body is the container for the body section
+Sets body text styling and puts no space around body container
+margin:0 sets no margin around container; 
+font-family, color, and line-height set typestyles; 
+padding: 0 24px 40px adds padding to the right and left only
+*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2933;
+  line-height: 1.5;
+  padding: 0 24px 40px;
+}
+
+/*
+.logo is the image container class selector for the logo
+Maximum width and height of image are set so it doesn't get too large when displayed on desktop 
+margin:0 sets no margin around container; 
+max-width: 200px and height: auto set the width and height of the image
+*/
+.logo {
+    margin: 0;
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* Section 1 — Nav bar */
+
+/* .navbar is the navigation section class selector
+Uses flex-box to display contents in a line with equal space between them and centers them vertically in the container. 
+display: flex; makes the navigation responsive to window size
+justify-content: space-between; puts space between contents (.logo and .navlinks)
+align-items: flex end; aligns contents to the end of the container (bottom)
+padding: 2rem; background-color: #fbc845; color: #483d8b; set container styling
+*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+  background-color: #fbc845;
+  color: #483d8b;
+}
+
+/* .navlinks is the navigation link container class selector
+Uses flex-box to display contents in a line with space between them
+display: flex; makes the navigation responsive to window size
+gap: 2rem; puts space between each link to keep them separated
+list-style: none; removes list item auto-formatting so there are no bullet points in the navigation
+margin and padding are both set to 0 so there's no extra space in or around individual links
+*/
+.navlinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Section 2 — Centered hero */
+/* .hero is the hero section class selector
+Uses flex-box to display contents in the exact center of the container and sets background and text styles.
+display: flex; makes the navigation responsive to window size
+justify-content: center; centers contents on x-axis
+align-items: center; centers contents on y-axis
+min-height: 300px; makes sure content doesn't go below 300px high
+background-color: #fbc845; color: #483d8b; sets container styling
+*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #483d8b;
+  color: #fbc845;
+}
+
+
+/* Section 3 — Responsive card row */
+/* .card-row is the section container class selector
+Uses flex-box to display contents (.card) in a row that will continue to the next line when needed. 
+display: flex; makes contents responsive to window size
+flex-wrap: wrap; pushes overflow content to next row 
+justify-content: space-evenly; distributes contents evenly along x-axis
+gap: 1.5rem; adds space between contents
+*/
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+/* .card is the content class selector for the card row section
+Creates flex-boxes (cards) that resize to fit the window. 
+flex: 1 1 240px; allows responsive sizing in card section to fill container and initializes container width to 240px
+max-width: 300px; stops the contents from getting too big if an odd number of elements drop to a new line 
+    NOTE: I couldn't figure out a better way to do this, but I'm sure it's something simple I'm missing
+box-sizing: border-box; all styling is applied inside container (including border and padding)
+text-align: center; centers content text in container
+background-color: #fbc845; padding: 1rem; makes container background yellow and adds space around content
+border-radius: 10px; border: 5px solid #483d8b; adds rounded corners and a purple border
+*/
+.card {
+  flex: 1 1 240px; 
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fbc845;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 5px solid #483d8b;
+}
+
+
+/* MOBILE ONLY FORMATTING */
+/* based on Mobile Stack preset */
+
+/* @media is conditional CSS Styling that runs only when the viewport device-width is less than 600px */
+
+/* .card-row is the section container class selector
+Uses flex-box to display contents (cards) in a column, cards are centered and set to fill window horizontally.
+display: flex; makes contents responsive to window size
+flex-wrap: wrap; pushes overflow content to next row 
+justify-content: center; centers contents along x-axis
+align-items: stretch; forces contents to fill container
+gap: 12px; adds space between contents
+*/
+@media (max-width: 600px) {
+    .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+}
+ 
+/* .card is the content class selector for the card row section
+Changes maximum width of cards when viewed on mobile.
+max-width: 90%; adds space around right and left of cards, I think it looks better this way
+NOTE: I couldn't figure out a better way to do this, but I'm sure it's something simple I'm missing
+*/
+    .card {
+        max-width: 90%;
+}
+}
